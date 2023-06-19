@@ -1,10 +1,12 @@
+import CopyRight from '@/components/copyright'
 import Hero from '@/components/hero'
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="">
       <Hero />
+      <CopyRight />
     </main>
   )
 }
