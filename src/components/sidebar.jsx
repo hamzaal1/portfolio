@@ -1,24 +1,34 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Sidebar() {
-    // console.log('hello world');
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const pathname = usePathname()
     const isActive = (path) => {
         let active = pathname === path;
-        console.log(active);
         return active ? 'text-secondary' : '';
     }
+
+    useEffect(() => {
+
+        if (sidebarOpen) {
+            document.body.style.overflow = 'hidden';
+        }
+
+        return () => {
+            // Ensure scrolling is enabled when the component unmounts
+            document.body.style.overflow = 'auto';
+        };
+    }, [sidebarOpen])
     return (
         <>
             <div onMouseEnter={(e) => setSidebarOpen(true)} className="animate-pulse px-4 md:px-5 h-52 fixed top-[40%] left-0 text-white cursor-pointer bg-primary">
             </div>
             <div
                 onClick={(e) => setSidebarOpen(false)}
-                className={`${sidebarOpen ? '' : 'hidden'} absolute bg-[#353535] bg-opacity-75 min-w-full min-h-full`}>
+                className={`${sidebarOpen ? '' : 'hidden'} absolute bg-[#353535] bg-opacity-75 min-w-full min-h-[1000vh]`}>
                 <div
                     className="px-5 md:px-6 h-60 fixed top-[38%] left-[3%] text-white cursor-pointer bg-primary grid grid-cols-1 items-center justify-center">
                     <Link className={`hover:text-secondary ${isActive('/')} text-center`} href='/'>

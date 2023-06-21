@@ -1,0 +1,42 @@
+@keyframes first-loader {
+    5% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-48rem);
+    }
+
+
+    100% {
+        transform: translateY(-50rem);
+    }
+}
+
+@keyframes second-loader {
+    5% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-20rem);
+    }
+
+    50% {
+        transform: translateY(-48rem);
+    }
+
+    100% {
+        transform: translateY(-50rem);
+    }
+}
+
+.first-load {
+    animation: first-loader 5s ease-out;
+    animation-delay: 3s;
+}
+
+.second-load {
+    animation: second-loader 5s ease-out;
+    animation-delay: 3s;
+}
