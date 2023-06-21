@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Hero() {
     return (
-        <div className="container py-10 flex flex-col md:flex-row justify-center items-center">
+        <div className="flex mb-10 flex-col md:flex-row justify-center items-center">
             <div className="flex-1">
                 <div className="grid justify-center">
                     <div className="text-4xl font-medium">
@@ -29,7 +29,7 @@ function Hero() {
                 </div>
             </div>
             <div className="flex-1 mb-10 md:mb-0 order-first md:order-last">
-                <Image className="mx-auto" src={`/images/hero-section-avatar.svg`} alt="me" width="350" height="35" />
+                <Image className="mx-auto " src={`/images/hero-section-avatar.svg`} alt="me" width="350" height="35" />
             </div>
         </div>
     )
