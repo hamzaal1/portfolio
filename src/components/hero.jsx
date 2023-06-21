@@ -17,13 +17,13 @@ function Hero() {
                     </div>
                     <div className="flex gap-2 text-white mt-2">
                         <a href="">
-                            <i className="fa-brands fa-linkedin text-2xl"></i>
+                            <i className="fa-brands fa-linkedin text-2xl hover:text-slate-200"></i>
                         </a>
                         <a href="">
-                            <i className="fa-brands fa-square-instagram text-2xl"></i>
+                            <i className="fa-brands fa-square-instagram text-2xl hover:text-slate-200"></i>
                         </a>
                         <a href="">
-                            <i className="fa-brands fa-square-github text-2xl"></i>
+                            <i className="fa-brands fa-square-github text-2xl hover:text-slate-200"></i>
                         </a>
                     </div>
                 </div>
