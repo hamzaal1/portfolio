@@ -1,15 +1,17 @@
 import Image from "next/image";
+import TextSlide from "./textslide";
 
 function Hero() {
     return (
         <div className="flex mb-10 flex-col md:flex-row justify-center items-center">
             <div className="flex-1">
-                <div className="grid justify-center">
+                <div className="grid md:ps-16 xl:justify-center">
                     <div className="text-4xl font-medium">
                         <h1 className="mb-1 text-white">
                             Hey 👋, I'm
                         </h1>
-                        <p className="text-secondary">Hamza Demnani</p>
+                        {/* <p className="text-secondary">Hamza Demnani</p> */}
+                        <TextSlide />
                     </div>
                     <div className="flex gap-3 text-white mt-3">
                         <button className="bg-primary py-1 px-3 rounded-sm">Contact Me</button>

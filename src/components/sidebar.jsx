@@ -28,7 +28,7 @@ function Sidebar() {
             </div>
             <div
                 onClick={(e) => setSidebarOpen(false)}
-                className={`${sidebarOpen ? '' : 'hidden'} absolute bg-[#353535] bg-opacity-75 min-w-full min-h-[1000vh]`}>
+                className={`${sidebarOpen ? '' : 'hidden'} absolute bg-[#353535] bg-opacity-75 min-w-full min-h-[1000vh] z-40`}>
                 <div
                     className="px-5 md:px-6 h-60 fixed top-[38%] left-[3%] text-white cursor-pointer bg-primary grid grid-cols-1 items-center justify-center">
                     <Link className={`hover:text-secondary ${isActive('/')} text-center`} href='/'>
