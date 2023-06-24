@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,4 +24,20 @@
   }
 }
 
+body::-webkit-scrollbar-track
+{
+	border-radius: 5xp;
+	background-color: #222222;
+}
 
+body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #222222;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	border-radius: 5px;
+	background-color: #A6BCFA;
+}
