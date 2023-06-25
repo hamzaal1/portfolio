@@ -3,6 +3,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Sidebar from '@/components/sidebar'
 import LoadAnimation from '@/components/load'
+import CopyRight from '@/components/copyright'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <Sidebar />
         {children}
+        <CopyRight />
       </body>
     </html>
   )

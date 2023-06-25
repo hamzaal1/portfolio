@@ -4,6 +4,11 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{ts,tsx}",
+    "./public/**/*.html",
+    "./node_modules/flowbite-react/**/*.js",
+    "./pages/**/*.{ts,tsx}",
+    "./public/**/*.html",
   ],
   theme: {
     extend: {
@@ -16,12 +21,12 @@ module.exports = {
         center: true,
         padding: "1rem",
       },
-      colors:{
-        primary:"#455174",
-        secondary:"#A6BCFA",
-        background:"#222222"
+      colors: {
+        primary: "#455174",
+        secondary: "#A6BCFA",
+        background: "#222222"
       }
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 }

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Navbar() {
     return (
-        <nav className="bg-background border-b-[1px]">
+        <nav className="bg-background border-b-[1px] border-primary">
             <div className="container py-3">
                 <div className="flex items-center justify-between">
                     <Link href="/">

@@ -3,7 +3,7 @@ import TextSlide from "./textslide";
 
 function Hero() {
     return (
-        <div className="flex mb-10 flex-col md:flex-row justify-center items-center">
+        <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="flex-1">
                 <div className="grid grid-cols-1  ps-7 md:ps-16 xl:justify-center">
                     <div className="text-3xl font-medium mb-2 md:mb-0">
