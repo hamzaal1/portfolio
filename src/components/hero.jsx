@@ -1,10 +1,16 @@
+"use client";
 import Image from "next/image";
 import TextSlide from "./textslide";
+import { motion } from "framer-motion";
 
 function Hero() {
     return (
         <div className="flex flex-col md:flex-row justify-center items-center">
-            <div className="flex-1">
+            <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 3.5 }}
+                className="flex-1">
                 <div className="grid grid-cols-1  ps-7 md:ps-16 xl:justify-center">
                     <div className="text-3xl font-medium mb-2 md:mb-0">
                         <h1 className="text-white">
@@ -12,7 +18,7 @@ function Hero() {
                         </h1>
                         {/* <p className="text-secondary">Hamza Demnani</p> */}
                         <TextSlide />
-                        <TextSlide delay={6000} Content="Web FullStack Developer😃"  />
+                        <TextSlide delay={6000} Content="Web FullStack Developer😃" />
                     </div>
                     <div className="flex gap-3 text-white mt-3">
                         <button className="bg-primary hover:bg-secondary hover:text-primary py-1 px-3 rounded-sm">Hire Me</button>
@@ -30,11 +36,15 @@ function Hero() {
                         </a>
                     </div>
                 </div>
-            </div>
-            <div className="flex-1 mb-10 md:mb-0 order-first md:order-last">
+            </motion.div>
+            <motion.div
+                initial={{ opacity: 0, x: 40 }}
+                whileInView={{ opacity: 1, x: 10 }}
+                transition={{ delay: 3.5 }} 
+                className="flex-1 mb-10 md:mb-0 order-first md:order-last">
                 <Image className="mx-auto " src={`/images/hero-section-avatar.svg`} alt="me" width="350" height="35" />
-            </div>
-        </div>
+            </motion.div>
+        </div >
     )
 }
 

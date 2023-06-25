@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import './scss/textSlide.scss';
-
-function TextSlide({ delay = 3500 , Content ="hamza demnani" }) {
+import { motion } from 'framer-motion';
+function TextSlide({ delay = 3500, Content = "hamza demnani" }) {
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
@@ -14,11 +14,15 @@ function TextSlide({ delay = 3500 , Content ="hamza demnani" }) {
 
     return (
         <div className="box">
-            {isMounted && (
-                <div className="title">
+            {isMounted &&(
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    // transition={{ delay: 1 }}
+                    className="title">
                     <span className="block"></span>
-                    <h1 className="text-secondary capitalize">{ Content }</h1>
-                </div>
+                    <h1 className="text-secondary capitalize">{Content}</h1>
+                </motion.div>
             )}
         </div>
     );
