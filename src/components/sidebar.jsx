@@ -27,7 +27,7 @@ function Sidebar() {
     }, [sidebarOpen])
     return (
         <>
-            <motion.div onMouseEnter={(e) => setSidebarOpen(true)} className={`${sidebarOpen ? '' : 'animate-pulse'} px-4 md:px-5 h-52 fixed top-[40%] left-0 text-white cursor-pointer bg-primary`}>
+            <motion.div onMouseEnter={(e) => setSidebarOpen(true)} className={`${sidebarOpen ? '' : 'animate-pulse'} px-4 md:px-5 h-52 fixed top-[40%] left-0 text-white cursor-pointer bg-primary z-40`}>
             </motion.div>
             <div
                 onClick={(e) => setSidebarOpen(false)}
