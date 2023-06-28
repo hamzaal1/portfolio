@@ -1,9 +1,9 @@
-"use client";
+// "use client";
 import Project from '@/components/project'
-import { useState } from 'react';
+// import { useState } from 'react';
 
 function page() {
-    const [projects, setProject] = useState([
+    const projects = [
         {
             id: crypto.randomUUID(),
             title: "Dawya Natures",
@@ -32,7 +32,7 @@ function page() {
             tools: "Next JS . React JS . Prisma ORM . MongoDB . Flowbite . Css . Tailwand Css",
             image: "tabla-ma.png"
         }
-    ]);
+    ];
     return (
         <main className="container text-white py-10 grid grid-col-1 justify-center md:justify-start">
             <h1 className="text-4xl font-bold">My Work 😄</h1>
