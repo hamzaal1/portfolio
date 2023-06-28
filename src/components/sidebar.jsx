@@ -39,16 +39,16 @@ function Sidebar() {
                     >
                         <i className=" fa-solid fa-house text-2xl"></i>
                         <span
-                            class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
+                            className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
                             -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto z-40">
                             Home
                         </span>
                     </Link>
                     <Link
-                        className={`hover:text-secondary ${isActive('/skilles')} text-center relative group`} href='/skilles'>
-                        <i class="fa-solid fa-keyboard text-2xl"></i>
+                        className={`hover:text-secondary ${isActive('/work')} text-center relative group`} href='/work'>
+                        <i className="fa-solid fa-keyboard text-2xl"></i>
                         <span
-                            class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
+                            className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
                             -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto z-40">
                             Work
                         </span>
@@ -57,7 +57,7 @@ function Sidebar() {
                         className={`hover:text-secondary ${isActive('/skilles')} text-center relative group`} href='/skilles'>
                         <i className=" fa-solid fa-laptop-code text-2xl"></i>
                         <span
-                            class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
+                            className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
                             -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto z-40">
                             Skilles
                         </span>
@@ -66,7 +66,7 @@ function Sidebar() {
                         className={`hover:text-secondary ${isActive('/contact-me')} text-center relative group`} href='/contact-me'>
                         <i className=" fa-solid fa-phone-volume text-2xl"></i>
                         <span
-                            class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
+                            className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
                             -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto z-40">
                             Contact
                         </span>
@@ -75,7 +75,7 @@ function Sidebar() {
                         className={`hover:text-secondary ${isActive('/about-me')} text-center relative group`} href='/about-me'>
                         <i className=" fa-solid fa-circle-info text-2xl"></i>
                         <span
-                            class="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
+                            className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
                             -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto z-40">
                             About
                         </span>
