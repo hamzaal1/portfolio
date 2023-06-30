@@ -2,11 +2,11 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-function Project({project}) {
+function Project({ project }) {
     return (
         <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0, transform: "rotateX(30deg)" }}
+            whileInView={{ opacity: 1, transform: "rotateX(0deg)" }}
             transition={{ delay: 1.8, duration: 0.8, ease: "easeInOut" }}
             className="flex flex-col md:flex-row max-h-fit ps-8 md:ps-0 py-10">
             <div
@@ -16,9 +16,9 @@ function Project({project}) {
                     {project.body}
                 </p>
                 <div className="text-secondary mt-5">
-                   {project.tools}
+                    {project.tools}
                 </div>
-            </div> 
+            </div>
             <Image className="order-first md:order-last" src={`/images/work/${project.image}`} width={400} height={200} alt="dawya-naturs" />
         </motion.div>
     )
