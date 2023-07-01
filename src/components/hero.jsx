@@ -2,6 +2,7 @@
 import Image from "next/image";
 import TextSlide from "./textslide";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 function Hero() {
     return (
@@ -21,8 +22,12 @@ function Hero() {
                         <TextSlide delay={6000} Content="Web FullStack Developer😃" />
                     </div>
                     <div className="flex gap-3 text-white mt-3">
-                        <button className="bg-primary hover:bg-secondary hover:text-primary py-1 px-3 rounded-sm">Hire Me</button>
-                        <button className="bg-primary hover:bg-secondary hover:text-primary py-1 px-3 rounded-sm">Watch My Resume</button>
+                        <Link href="/contact">
+                            <button className="bg-primary hover:bg-secondary hover:text-primary py-1 px-3 rounded-sm">Hire Me</button>
+                        </Link>
+                        <button
+                            onClick={(e) => window.open("/hamza-demnani.pdf", "_blank")}
+                            className="bg-primary hover:bg-secondary hover:text-primary py-1 px-3 rounded-sm">Watch My Resume</button>
                     </div>
                     <div className="flex gap-2 text-white mt-3">
                         <a href="">
@@ -40,7 +45,7 @@ function Hero() {
             <motion.div
                 initial={{ opacity: 0, x: 40 }}
                 whileInView={{ opacity: 1, x: 10 }}
-                transition={{ delay: 3.5 }} 
+                transition={{ delay: 3.5 }}
                 className="flex-1 mb-10 md:mb-0 order-first md:order-last">
                 <Image className="mx-auto " src={`/images/hero-section-avatar.svg`} alt="me" width="350" height="35" />
             </motion.div>

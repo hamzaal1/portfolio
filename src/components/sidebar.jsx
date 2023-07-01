@@ -66,7 +66,7 @@ function Sidebar() {
                                 </span>
                             </Link>
                             <Link
-                                className={`hover:text-secondary ${isActive('/contact-me')} text-center relative group`} href='/contact-me'>
+                                className={`hover:text-secondary ${isActive('/contact')} text-center relative group`} href='/contact'>
                                 <i className=" fa-solid fa-phone-volume text-2xl"></i>
                                 <span
                                     className="group-hover:opacity-100 transition-opacity bg-gray-800 px-1 text-sm text-gray-100 rounded-md absolute left-1/2 
