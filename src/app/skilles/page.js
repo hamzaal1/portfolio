@@ -1,14 +1,20 @@
 "use client"
 import { motion } from "framer-motion";
 import Image from "next/image";
+
+export const metadata = {
+    title: 'My Skilles | TechStylitix',
+}
+
+
 function page() {
     return (
         <main className="container text-white py-10 grid grid-col-1 justify-center md:justify-start">
             <h1 className="text-4xl font-bold">My Skilles 💻</h1>
             <motion.div
-                initial={{ opacity:0 , x:-20, y:20 }}
-                animate={{ opacity:1,y:0 }}
-                transition={{ delay:3.5 }}
+                initial={{ opacity: 0, x: -20, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 3.5 }}
                 className="w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center py-10">
                 <div className="showcase_skille mb-10">
                     <div className="bg-yellow-400 mb-1 grid items-center w-28 h-28 rounded-full mx-auto">

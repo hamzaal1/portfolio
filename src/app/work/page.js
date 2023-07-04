@@ -1,6 +1,10 @@
 // "use client";
 import Project from '@/components/project'
 // import { useState } from 'react';
+export const metadata = {
+    title: 'My Work | TechStylitix',
+}
+
 
 function page() {
     const projects = [

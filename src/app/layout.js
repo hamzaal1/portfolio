@@ -8,8 +8,8 @@ import CopyRight from '@/components/copyright'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'TechStylitix | Senior_Next_Js & React_Js | Front-End | Back-End | Make Web Application | Bug Solver',
-  description: 'Hi , I’m Hamza Demnani 😃 .I have over 3years Of Designing end-to-end experience with 🖤 for financial products on web platforms 💻. Working closely with managers, marketing specialists and developers. 🌟',
+  title: 'TechStylitix | Senior_Next_Js & Laravel | Front-End | Back-End | Make Web Application | Bug Solver',
+  description: 'Hi , I’m Hamza Demnani 😃 .I have over 3years Of Designing end-to-end experience for financial products on web platforms . Working closely with managers, marketing specialists and developers. 🌟',
   keywords: 'Hamza Demnani,TechStylitix,Web Developer,Freelance,Remote,Morocco,Next.js, React.js, front-end, back-end, web application, bug solver',
 }
 

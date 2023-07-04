@@ -1,5 +1,10 @@
 import React from 'react'
 
+export const metadata = {
+    title: 'Contact Me | TechStylitix',
+}
+
+
 function page() {
     return (
         <main className="container text-white py-10 grid grid-col-1 justify-center md:justify-start">
