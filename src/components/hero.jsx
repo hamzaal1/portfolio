@@ -30,7 +30,7 @@ function Hero() {
                             className="bg-primary hover:bg-secondary hover:text-primary py-1 px-3 rounded-sm">Watch My Resume</button>
                     </div>
                     <div className="flex gap-2 text-white mt-3">
-                        <a href="www.linkedin.com/in/hamza-demnani" target="_blank">
+                        <a href="https://www.linkedin.com/in/hamza-demnani/" target="_blank">
                             <i className="fa-brands fa-linkedin text-4xl hover:text-slate-200"></i>
                         </a>
                         <a href="">
