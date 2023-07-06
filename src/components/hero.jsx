@@ -22,7 +22,7 @@ function Hero() {
                         <TextSlide delay={6000} Content="Web FullStack Developer😃" />
                     </div>
                     <div className="flex gap-3 text-white mt-3">
-                        <Link href="/contact">
+                        <Link target="_blank" href="https://www.upwork.com/freelancers/~0135208d21490a720b?viewMode=1">
                             <button className="bg-primary hover:bg-secondary hover:text-primary py-1 px-3 rounded-sm">Hire Me</button>
                         </Link>
                         <button
@@ -30,13 +30,13 @@ function Hero() {
                             className="bg-primary hover:bg-secondary hover:text-primary py-1 px-3 rounded-sm">Watch My Resume</button>
                     </div>
                     <div className="flex gap-2 text-white mt-3">
-                        <a href="">
+                        <a href="www.linkedin.com/in/hamza-demnani" target="_blank">
                             <i className="fa-brands fa-linkedin text-4xl hover:text-slate-200"></i>
                         </a>
                         <a href="">
                             <i className="fa-brands fa-square-instagram text-4xl hover:text-slate-200"></i>
                         </a>
-                        <a href="">
+                        <a href="https://github.com/hamzaal1?tab=overview&from=2023-07-01&to=2023-07-06" target="_blank">
                             <i className="fa-brands fa-square-github text-4xl hover:text-slate-200"></i>
                         </a>
                     </div>

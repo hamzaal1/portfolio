@@ -9,7 +9,7 @@ function Skilles() {
                 initial={{ opacity: 0, x: -20, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 3.5 }}
-                className="w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center py-10">
+                className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-center items-center py-10">
                 <div className="showcase_skille mb-10">
                     <div className="bg-yellow-400 mb-1 grid items-center w-28 h-28 rounded-full mx-auto">
                         <Image className="mx-auto" src={"/images/skills/js.png"} width={60} height={10} alt="next Js" />

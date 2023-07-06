@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Nav from "./nav";
 
 function Navbar() {
     return (
@@ -9,9 +10,7 @@ function Navbar() {
                     <Link href="/">
                         <Image src={'/images/logo.svg'} alt="me" width="25" height="35" />
                     </Link>
-                    <span className="text-white cursor-pointer">
-                        <i className="fa-solid fa-moon"></i>
-                    </span>
+                    <Nav />
                 </div>
             </div>
         </nav>

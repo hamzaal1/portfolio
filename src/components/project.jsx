@@ -5,8 +5,8 @@ import Image from "next/image";
 function Project({ project }) {
     return (
         <motion.div
-            initial={{ opacity: 0, transform: "rotateX(30deg)" }}
-            whileInView={{ opacity: 1, transform: "rotateX(0deg)" }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ delay: 1.8, duration: 0.8, ease: "easeInOut" }}
             className="flex flex-col md:flex-row max-h-fit ps-8 md:ps-0 py-10">
             <div
