@@ -2,8 +2,8 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import './scss/linkSlide.scss';
-import { useState } from "react";
-import { Button, Drawer, Radio, Space } from 'antd';
+import { useEffect, useState } from "react";
+import { Drawer } from 'antd';
 
 
 function Nav() {
@@ -15,10 +15,14 @@ function Nav() {
     const [placement, setPlacement] = useState('right');
     const showDrawer = () => {
         setOpen(true);
-    };
+    }
     const onClose = () => {
         setOpen(false);
-    };
+    }
+    useEffect(() => {
+        setOpen(false)
+    }, [pathname])
+
     return (
         <>
             <div
@@ -43,12 +47,13 @@ function Nav() {
                     >
                         Skilles
                     </Link>
-                    <Link
+                    {/* Until i finish the code */}
+                    {/* <Link
                         className={`font-semibold ${isActive('/contact') === false ? 'hover_animation' : 'text-secondary'}`}
                         href='/contact'
                     >
                         Contact
-                    </Link>
+                    </Link> */}
                     <Link
                         className={`font-semibold ${isActive('/about-me') === false ? 'hover_animation' : 'text-secondary'}`}
                         href='/about-me'
@@ -60,14 +65,9 @@ function Nav() {
             </div>
 
             <div className="block md:hidden text-white">
-                <Space>
-                    {/* <Button type="" >
-
-                    </Button> */}
-                    <span className="cursor-pointer px-2 py-1" onClick={showDrawer}>
-                        <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                    </span>
-                </Space>
+                <span className="cursor-pointer px-2 py-1" onClick={showDrawer}>
+                    <i className="fa-solid fa-bars-staggered text-2xl"></i>
+                </span>
                 <Drawer
                     className="!bg-background text-white"
                     title={<span className="text-secondary">TechStylitix | Navigation</span>}
@@ -80,7 +80,6 @@ function Nav() {
                         <ul className="grid grid-cols-1 gap-7 py-12 justify-center items-center min-h-fit text-3xl">
                             <li>
                                 <Link
-                                    onClick={onClose}
                                     className={`font-semibold ${isActive('/') === false ? 'hover_animation' : 'text-secondary'}`}
                                     href='/'
                                 >
@@ -89,7 +88,6 @@ function Nav() {
                             </li>
                             <li>
                                 <Link
-                                    onClick={onClose}
                                     className={`font-semibold ${isActive('/work') === false ? 'hover_animation' : 'text-secondary'}`}
                                     href='/work'
                                 >
@@ -99,25 +97,23 @@ function Nav() {
                             <li>
 
                                 <Link
-                                    onClick={onClose}
                                     className={`font-semibold ${isActive('/skilles') === false ? 'hover_animation' : 'text-secondary'}`}
                                     href='/skilles'
                                 >
                                     Skilles
                                 </Link>
                             </li>
-                            <li>
+                            {/* Until i finish the code */}
+                            {/* <li>
                                 <Link
-                                    onClick={onClose}
                                     className={`font-semibold ${isActive('/contact') === false ? 'hover_animation' : 'text-secondary'}`}
                                     href='/contact'
                                 >
                                     Contact
                                 </Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <Link
-                                    onClick={onClose}
                                     className={`font-semibold ${isActive('/about-me') === false ? 'hover_animation' : 'text-secondary'}`}
                                     href='/about-me'
                                 >

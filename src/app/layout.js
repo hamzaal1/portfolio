@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <meta name="keywords" content={metadata.keywords} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <body className={`${inter.className} bg-background md:overflow-y-auto`}>
+      <body className={`${inter.className} bg-background overflow-x-hidden md:overflow-y-auto`}>
         <LoadAnimation />
         <Navbar />
         {children}
