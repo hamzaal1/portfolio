@@ -72,8 +72,8 @@ function Nav() {
                                 links.map((link, index) => (
                                     <motion.li
                                         key={index}
-                                        initial={{ opacity: 0, x: -20, backdropFilter: blur("30px") }}
-                                        whileInView={{ opacity: 1, x: 0, backdropFilter: blur("0px") }}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
                                         transition={{ duration: 0.5, delay: index * 0.3 }}>
                                         <Link
                                             className={`font-semibold ${isActive(link.path) === false ? 'hover_animation' : 'text-secondary'}`}
