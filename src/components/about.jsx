@@ -11,7 +11,7 @@ function About() {
                 transition={{ delay: 3, duration: 0.8, ease: "easeInOut" }}
                 className="w-[65%] md:w-[55%] mx-auto">
                 <Image
-                    draggable="false" className="rounded-md" src={"/images/me.jpg"} width={270} height={150} alt="me" />
+                    draggable="false" className="rounded-md ml-auto" src={"/images/me.jpg"} width={270} height={150} alt="me" />
             </motion.div>
             <motion.div
                 initial={{ x: 30, opacity: 0 }}
