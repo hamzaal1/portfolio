@@ -42,6 +42,7 @@ function Nav() {
                     {
                         links.map(link => (
                             <Link
+                                key={link.name}
                                 className={`font-semibold ${isActive(link.path) === false ? 'hover_animation' : 'text-secondary'}`}
                                 href={link.path}
                             >
@@ -70,8 +71,9 @@ function Nav() {
                             {
                                 links.map((link, index) => (
                                     <motion.li
-                                        initial={{ opacity: 0, x: -20,backdropFilter:blur("30px") }}
-                                        whileInView={{ opacity:1,x:0,backdropFilter:blur("0px") }}
+                                        key={index}
+                                        initial={{ opacity: 0, x: -20, backdropFilter: blur("30px") }}
+                                        whileInView={{ opacity: 1, x: 0, backdropFilter: blur("0px") }}
                                         transition={{ duration: 0.5, delay: index * 0.3 }}>
                                         <Link
                                             className={`font-semibold ${isActive(link.path) === false ? 'hover_animation' : 'text-secondary'}`}
