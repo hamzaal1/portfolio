@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className="py-10">
       <Hero />
-      <Blogsection />
+      {/* <Blogsection /> */}
     </main>
   )
 }
