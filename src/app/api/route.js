@@ -14,7 +14,7 @@ export async function GET() {
     const data = {
         describe: "this's my rest api from next js"
     }
-    return NextResponse.json({ message: "test",users,data });
+    return NextResponse.json({ message: "Hello",users,data });
 }
 
 // ---------------Before Prisma-----------------------

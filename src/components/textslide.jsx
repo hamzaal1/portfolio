@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import './scss/textSlide.scss';
 import { motion } from 'framer-motion';
-function TextSlide({ delay = 3500, Content = "hamza demnani" }) {
+
+function TextSlide({ delay = 3500, children }) {
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
@@ -14,14 +15,14 @@ function TextSlide({ delay = 3500, Content = "hamza demnani" }) {
 
     return (
         <div className="box">
-            {isMounted &&(
+            {isMounted && (
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     // transition={{ delay: 1 }}
                     className="title">
                     <span className="block"></span>
-                    <h1 className="text-secondary capitalize">{Content}</h1>
+                    <h1 className="text-secondary capitalize">{children}</h1>
                 </motion.div>
             )}
         </div>

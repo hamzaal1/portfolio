@@ -20,8 +20,12 @@ function Hero() {
                                 Hey 👋, I'm
                             </h1>
                             {/* <p className="text-secondary">Hamza Demnani</p> */}
-                            <TextSlide />
-                            <TextSlide delay={6000} Content="Web FullStack Developer😃" />
+                            <TextSlide >
+                                Hamza Demnani
+                            </TextSlide> <br />
+                            <TextSlide delay={6000}>
+                                Web FullStack Developer😃
+                            </TextSlide>
                         </div>
                         <div className="flex gap-3 text-white mt-3">
                             <Link target="_blank" href="https://www.upwork.com/freelancers/~0135208d21490a720b?viewMode=1">
