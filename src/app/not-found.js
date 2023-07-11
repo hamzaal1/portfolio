@@ -1,5 +1,11 @@
 import Image from 'next/image'
 
+
+export const metadata = {
+    title: '404 Not Found | TechStylitix',
+}
+
+
 function NotFound() {
     return (
         <main className="container text-white py-10 grid grid-col-1 justify-center ">
