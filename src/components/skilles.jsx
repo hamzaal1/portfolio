@@ -1,5 +1,4 @@
-"use client";
-import { motion } from "framer-motion";
+import * as motion from "@/utils/motion";
 import Image from "next/image";
 
 function Skilles() {

@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation'
 import './scss/linkSlide.scss';
 import { useEffect, useState } from "react";
 import { Drawer } from 'antd';
-import { motion } from "framer-motion";
+import * as motion from "@/utils/motion";
 
 const links = [
     {

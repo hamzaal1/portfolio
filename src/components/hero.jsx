@@ -1,8 +1,8 @@
-"use client";
 import Image from "next/image";
 import TextSlide from "./textslide";
-import { motion } from "framer-motion";
+import * as motion from "@/utils/motion";
 import Link from "next/link";
+import Resumebutton from "./resume-button";
 
 function Hero() {
     return (
@@ -31,9 +31,7 @@ function Hero() {
                             <Link target="_blank" href="https://www.upwork.com/freelancers/~0135208d21490a720b?viewMode=1">
                                 <button className="bg-primary hover:bg-secondary hover:text-primary py-1 px-3 rounded-sm">Hire Me</button>
                             </Link>
-                            <button
-                                onClick={(e) => window.open("/hamza-demnani.pdf", "_blank")}
-                                className="bg-primary hover:bg-secondary hover:text-primary py-1 px-3 rounded-sm">Watch My Resume</button>
+                            <Resumebutton />
                         </div>
                         <div className="flex gap-2 text-white mt-3">
                             <a href="https://www.linkedin.com/in/hamzademnani-/" target="_blank">

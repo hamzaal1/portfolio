@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import { useEffect, useState } from "react";
-import { motion } from 'framer-motion'
+import * as motion from "@/utils/motion";
 
 
 function Sidebar() {
