@@ -8,7 +8,7 @@ function Hero() {
     return (
         <>
             {/* hero section */}
-            <div className="container flex flex-col md:flex-row justify-center items-center">
+            <div className="container flex flex-col md:flex-row justify-center items-center xl:px-60 ">
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
